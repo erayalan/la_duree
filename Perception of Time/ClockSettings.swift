@@ -15,7 +15,7 @@ class ClockSettings: ObservableObject {
     
     private let amPositionsKey = "AMClockPositions"
     private let pmPositionsKey = "PMClockPositions"
-    private let suiteName = "group.com.ThisOrThat.PerceptionOfTime"
+    private let suiteName = "group.com.shouldithisorshouldithat.Perception-of-Time"
     
     private var sharedDefaults: UserDefaults? {
         UserDefaults(suiteName: suiteName)

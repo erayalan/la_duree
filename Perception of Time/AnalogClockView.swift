@@ -17,6 +17,7 @@ struct AnalogClockView: View {
     
     var body: some View {
         VStack(spacing: 80) {
+            Spacer()
             // Clock Face
             ZStack {
                 // Clock face
@@ -149,6 +150,14 @@ struct AnalogClockView: View {
                 }
                 .disabled(!settings.isAMMode)
             }
+    
+            Text("Drag the hour marks to stretch or shrink each hour based on how long it feels to you. Use the app's Widgets to pin your custom clock to your home screen.")
+                .font(.callout)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .layoutPriority(1)
+                .padding(.all)
+                .frame(width: 400)
             
         }
         .onReceive(timer) { _ in
@@ -388,3 +397,4 @@ struct AnalogClockView_Previews: PreviewProvider {
         }
     }
 }
+

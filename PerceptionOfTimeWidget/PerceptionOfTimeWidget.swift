@@ -38,7 +38,7 @@ struct Provider: TimelineProvider {
 
 
     private func loadPositions() -> [Int: Double] {
-        let suiteName = "group.com.ThisOrThat.PerceptionOfTime"
+        let suiteName = "group.com.shouldithisorshouldithat.Perception-of-Time"
         let defaults = UserDefaults(suiteName: suiteName)
         let key = Calendar.current.component(.hour, from: Date()) < 12 ? "AMClockPositions" : "PMClockPositions"
         if let data = defaults?.data(forKey: key),
